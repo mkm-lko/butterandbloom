@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design your dream cake. Choose flavor, size, aesthetic theme, and custom plaque messages.">
+    <title>Design Your Custom Cake | Butter & Bloom</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" id="logo-brand">
+                <span class="logo-text">Butter & Bloom</span>
+                <span class="logo-sub">Pâtisserie</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="navigation-bar">
+                <ul class="nav-list">
+                    <li><a href="about.html" class="nav-link">Our Story</a></li>
+                    <li><a href="collection.html" class="nav-link">Collection</a></li>
+                    <li><a href="best-sellers.html" class="nav-link">Best Sellers</a></li>
+                    <li><a href="custom-orders.html" class="nav-link active">Custom Cakes</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="login.html" class="nav-link">Sign In</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
+                <a href="custom-orders.html" class="btn btn-primary btn-sm active" id="nav-order-btn">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="hero-section" id="hero" style="height: 40vh; min-height: 300px; background-image: url('assets/custom_cakes.png');">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-container" style="padding-top: 60px;">
+                <div class="hero-content text-center">
+                    <span class="hero-tagline">Design Studio</span>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Custom Celebration Cakes</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Orders (Configurator) Section -->
+        <section class="custom-orders-section section-padding animate-on-load" id="custom-orders">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Interactive Builder</span>
+                    <h2 class="section-title">Your Dream Cake, Perfectly Crafted</h2>
+                    <div class="divider center">
+                        <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p class="section-subtitle">
+                        Customize your celebration cake below. Select your flavor, size, style, and let our pastry chefs bring your vision to life.
+                    </p>
+                </div>
+
+                <div class="configurator-grid">
+                    <!-- Left: Form Controls -->
+                    <div class="config-form-container">
+                        <form id="cake-configurator-form" class="config-form">
+                            <!-- Input 1: Flavor -->
+                            <div class="form-group">
+                                <label for="cake-flavor" class="form-label">Select Flavor Profile</label>
+                                <select id="cake-flavor" class="form-select">
+                                    <option value="raspberry-rose" data-price="0">Raspberry Rose & Vanilla Bean</option>
+                                    <option value="belgian-chocolate" data-price="420">Belgian Chocolate Truffle (+₹420)</option>
+                                    <option value="salted-caramel" data-price="250">Salted Caramel Praline (+₹250)</option>
+                                    <option value="lemon-elderflower" data-price="340">Lemon Elderflower & Honey (+₹340)</option>
+                                    <option value="pistachio-apricot" data-price="680">Pistachio Cardamom & Apricot (+₹680)</option>
+                                </select>
+                            </div>
+
+                            <!-- Input 2: Size -->
+                            <div class="form-group">
+                                <label class="form-label">Select Cake Size / Tiers</label>
+                                <div class="radio-grid">
+                                    <label class="radio-card">
+                                        <input type="radio" name="cake-size" value="6inch" data-price="3800" checked>
+                                        <span class="radio-content">
+                                            <span class="radio-title">6" Single Tier</span>
+                                            <span class="radio-subtitle">Serves 8-10 guests</span>
+                                            <span class="radio-price">₹3,800</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="cake-size" value="8inch" data-price="5500">
+                                        <span class="radio-content">
+                                            <span class="radio-title">8" Single Tier</span>
+                                            <span class="radio-subtitle">Serves 15-20 guests</span>
+                                            <span class="radio-price">₹5,500</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="cake-size" value="twotier" data-price="10000">
+                                        <span class="radio-content">
+                                            <span class="radio-title">Two-Tiered (6" + 8")</span>
+                                            <span class="radio-subtitle">Serves 30-35 guests</span>
+                                            <span class="radio-price">₹10,000</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="cake-size" value="threetier" data-price="18500">
+                                        <span class="radio-content">
+                                            <span class="radio-title">Three-Tiered (6"+8"+10")</span>
+                                            <span class="radio-subtitle">Serves 60-70 guests</span>
+                                            <span class="radio-price">₹18,500</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Input 3: Theme -->
+                            <div class="form-group">
+                                <label for="cake-theme" class="form-label">Design Theme & Aesthetic</label>
+                                <select id="cake-theme" class="form-select">
+                                    <option value="minimalist" data-price="0">Parisian Minimalist (Rough Buttercream)</option>
+                                    <option value="floral" data-price="1250">Floral Bloom (Fresh Edible Flowers & Herbs) (+₹1,250)</option>
+                                    <option value="gold-luxury" data-price="2100">Gold Splendor (24k Edible Gold Leaf Accents) (+₹2,100)</option>
+                                    <option value="whimsical" data-price="850">Whimsical Macaron & Berry Topped (+₹850)</option>
+                                </select>
+                            </div>
+
+                            <!-- Input 4: Decorations (Checkboxes) -->
+                            <div class="form-group">
+                                <label class="form-label">Extra Decor & Handcrafted Details</label>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="cake-decor" value="piping" data-price="420">
+                                        <span class="checkbox-content">
+                                            <span class="decor-name">Piped Buttercream Borders</span>
+                                            <span class="decor-price">+₹420</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="cake-decor" value="pearls" data-price="500">
+                                        <span class="checkbox-content">
+                                            <span class="decor-name">Edible Sugar Pearls</span>
+                                            <span class="decor-price">+₹500</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="cake-decor" value="sparklers" data-price="340">
+                                        <span class="checkbox-content">
+                                            <span class="decor-name">Elegant Rosegold Sparklers</span>
+                                            <span class="decor-price">+₹340</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="cake-decor" value="macaron-topper" data-price="1000">
+                                        <span class="checkbox-content">
+                                            <span class="decor-name">Handmade Macaron Halo</span>
+                                            <span class="decor-price">+₹1,000</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Input 5: Message -->
+                            <div class="form-group">
+                                <label for="cake-message" class="form-label">Personalized Cake Plaque Message</label>
+                                <input type="text" id="cake-message" class="form-input" placeholder="e.g., Happy 30th Birthday Sophia!" maxlength="40">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right: Sticky Live Preview & Summary -->
+                    <div class="config-preview-container">
+                        <div class="preview-card" id="interactive-preview-card">
+                            <div class="preview-visual">
+                                <div class="cake-illustration">
+                                    <div class="cake-layer-graphic tier-3" id="graphic-tier3"></div>
+                                    <div class="cake-layer-graphic tier-2" id="graphic-tier2"></div>
+                                    <div class="cake-layer-graphic tier-1" id="graphic-tier1"></div>
+                                    <div class="cake-stand-graphic"></div>
+                                </div>
+                                <div class="cake-theme-overlay" id="theme-visual-effects"></div>
+                                <div class="cake-message-plaque" id="plaque-preview">Butter & Bloom</div>
+                            </div>
+                            <div class="preview-details">
+                                <h3 class="preview-heading">Custom Cake Summary</h3>
+                                <ul class="summary-list">
+                                    <li><strong>Flavor:</strong> <span id="summary-flavor">Raspberry Rose & Vanilla Bean</span></li>
+                                    <li><strong>Size:</strong> <span id="summary-size">6" Single Tier</span></li>
+                                    <li><strong>Style:</strong> <span id="summary-theme">Parisian Minimalist</span></li>
+                                    <li><strong>Extras:</strong> <span id="summary-decor">None selected</span></li>
+                                    <li><strong>Message:</strong> <span id="summary-message" class="italic">None</span></li>
+                                </ul>
+                                <div class="summary-total">
+                                    <span class="total-label">Estimated Price:</span>
+                                    <span class="total-price" id="configurator-price">₹3,800</span>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-full" id="configurator-btn">Design Your Cake</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-col brand-col">
+                        <a href="index.html" class="logo footer-logo">
+                            <span class="logo-text">Butter & Bloom</span>
+                            <span class="logo-sub">Pâtisserie</span>
+                        </a>
+                        <p class="footer-about">
+                            Crafting Sweet Moments, One Bake at a Time. Bringing authentic Parisian-style baking with a modern artistic touch to your table.
+                        </p>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Contact & Visit</h4>
+                        <ul class="footer-links">
+                            <li class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">14 Connaught Place, New Delhi 110 001</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span class="contact-text">+91 11 4567 8900</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span class="contact-text">hello@butterandbloom.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hours Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Opening Hours</h4>
+                        <ul class="footer-hours">
+                            <li><span class="day">Monday - Friday</span> <span class="time">7:00 AM - 7:00 PM</span></li>
+                            <li><span class="day">Saturday</span> <span class="time">8:00 AM - 8:00 PM</span></li>
+                            <li><span class="day">Sunday</span> <span class="time">8:00 AM - 4:00 PM</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Location Graphic Column -->
+                    <div class="footer-col map-col">
+                        <h4 class="footer-title">Our Location</h4>
+                        <div class="map-placeholder" id="stylized-map">
+                            <div class="map-graphic">
+                                <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="120" rx="8" fill="#F5EFEB"/>
+                                    <line x1="20" y1="0" x2="20" y2="120" stroke="#FFF" stroke-width="8"/>
+                                    <line x1="0" y1="60" x2="200" y2="60" stroke="#FFF" stroke-width="12"/>
+                                    <line x1="150" y1="0" x2="150" y2="120" stroke="#FFF" stroke-width="6"/>
+                                    <path d="M0 100 C50 95, 120 115, 200 105" stroke="#E1EAEF" stroke-width="10" fill="none"/>
+                                    <circle cx="90" cy="50" r="15" fill="#F3E1DC" opacity="0.6"/>
+                                    <circle cx="90" cy="50" r="5" fill="#C5A880"/>
+                                    <text x="90" y="32" fill="#2C2623" font-size="8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" text-anchor="middle">Butter & Bloom</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="copyright">&copy; 2026 Butter & Bloom. All rights reserved. Crafted for lovers of fine baking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Modal -->
+    <div class="modal-overlay" id="order-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-content" id="modal-body-content"></div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

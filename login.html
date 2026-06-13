@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign In to Butter & Bloom. Access your custom cake orders, reservation codes, and guest dashboard.">
+    <title>Sign In | Butter & Bloom</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" id="logo-brand">
+                <span class="logo-text">Butter & Bloom</span>
+                <span class="logo-sub">Pâtisserie</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="navigation-bar">
+                <ul class="nav-list">
+                    <li><a href="about.html" class="nav-link">Our Story</a></li>
+                    <li><a href="collection.html" class="nav-link">Collection</a></li>
+                    <li><a href="best-sellers.html" class="nav-link">Best Sellers</a></li>
+                    <li><a href="custom-orders.html" class="nav-link">Custom Cakes</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="login.html" class="nav-link active">Sign In</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
+                <a href="custom-orders.html" class="btn btn-primary btn-sm" id="nav-order-btn">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 120px; min-height: 80vh; display: flex; align-items: center; justify-content: center; background-color: var(--bg-subtle);">
+        <div class="container">
+            <div class="login-container">
+                <h1 class="login-title">Sign In</h1>
+                <p class="login-subtitle">Access your Butter & Bloom dashboard</p>
+
+                <form id="login-form" class="login-form">
+                    <div class="form-group">
+                        <label for="username" class="form-label" style="font-size: 1rem;">Username</label>
+                        <input type="text" id="username" class="form-input" placeholder="Enter username" required autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label" style="font-size: 1rem;">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="Enter password" required autocomplete="current-password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" style="margin-top: 10px;">Sign In</button>
+                </form>
+
+                <div class="login-quick-access">
+                    <h3 class="quick-title">Quick Test Login</h3>
+                    <div class="quick-btn-grid">
+                        <button type="button" class="btn-quick" data-user="admin" data-pass="admin-bloom-99">Admin</button>
+                        <button type="button" class="btn-quick" data-user="user1" data-pass="user1-fresh-88">User 1</button>
+                        <button type="button" class="btn-quick" data-user="user2" data-pass="user2-sweet-77">User 2</button>
+                    </div>
+                </div>
+
+                <div class="credentials-hint">
+                    <strong>Demo Credentials:</strong><br>
+                    • Admin: <code>admin</code> / <code>admin-bloom-99</code><br>
+                    • User 1: <code>user1</code> / <code>user1-fresh-88</code><br>
+                    • User 2: <code>user2</code> / <code>user2-sweet-77</code>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-col brand-col">
+                        <a href="index.html" class="logo footer-logo">
+                            <span class="logo-text">Butter & Bloom</span>
+                            <span class="logo-sub">Pâtisserie</span>
+                        </a>
+                        <p class="footer-about">
+                            Crafting Sweet Moments, One Bake at a Time. Bringing authentic Parisian-style baking with a modern artistic touch to your table.
+                        </p>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Contact & Visit</h4>
+                        <ul class="footer-links">
+                            <li class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">14 Connaught Place, New Delhi 110 001</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span class="contact-text">+91 11 4567 8900</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span class="contact-text">hello@butterandbloom.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hours Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Opening Hours</h4>
+                        <ul class="footer-hours">
+                            <li><span class="day">Monday - Friday</span> <span class="time">7:00 AM - 7:00 PM</span></li>
+                            <li><span class="day">Saturday</span> <span class="time">8:00 AM - 8:00 PM</span></li>
+                            <li><span class="day">Sunday</span> <span class="time">8:00 AM - 4:00 PM</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Location Graphic Column -->
+                    <div class="footer-col map-col">
+                        <h4 class="footer-title">Our Location</h4>
+                        <div class="map-placeholder" id="stylized-map">
+                            <div class="map-graphic">
+                                <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="120" rx="8" fill="#F5EFEB"/>
+                                    <line x1="20" y1="0" x2="20" y2="120" stroke="#FFF" stroke-width="8"/>
+                                    <line x1="0" y1="60" x2="200" y2="60" stroke="#FFF" stroke-width="12"/>
+                                    <line x1="150" y1="0" x2="150" y2="120" stroke="#FFF" stroke-width="6"/>
+                                    <path d="M0 100 C50 95, 120 115, 200 105" stroke="#E1EAEF" stroke-width="10" fill="none"/>
+                                    <circle cx="90" cy="50" r="15" fill="#F3E1DC" opacity="0.6"/>
+                                    <circle cx="90" cy="50" r="5" fill="#C5A880"/>
+                                    <text x="90" y="32" fill="#2C2623" font-size="8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" text-anchor="middle">Butter & Bloom</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="copyright">&copy; 2026 Butter & Bloom. All rights reserved. Crafted for lovers of fine baking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Modal -->
+    <div class="modal-overlay" id="order-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-content" id="modal-body-content"></div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('login-form');
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+            const quickButtons = document.querySelectorAll('.btn-quick');
+
+            // Pre-defined valid credentials
+            const validUsers = {
+                'admin': 'admin-bloom-99',
+                'user1': 'user1-fresh-88',
+                'user2': 'user2-sweet-77'
+            };
+
+            // Handle quick click fill-in & login
+            quickButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const u = btn.getAttribute('data-user');
+                    const p = btn.getAttribute('data-pass');
+                    usernameInput.value = u;
+                    passwordInput.value = p;
+                    
+                    window.showToast(`Auto-filling credentials...`, '🔑');
+                    
+                    // Small delay to simulate action and submit
+                    setTimeout(() => {
+                        form.dispatchEvent(new Event('submit'));
+                    }, 500);
+                });
+            });
+
+            // Handle login form submission
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const user = usernameInput.value.trim();
+                const pass = passwordInput.value;
+
+                if (validUsers[user] && validUsers[user] === pass) {
+                    // Success login
+                    localStorage.setItem('bb-user', user);
+                    window.showToast(`Welcome back, ${user}! Sign in successful.`, '✨');
+                    
+                    // Trigger a custom event to let other parts know we signed in
+                    document.dispatchEvent(new CustomEvent('login-state-changed'));
+
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 1200);
+                } else {
+                    // Failed login
+                    window.showToast('Invalid username or password. Please try again.', '❌');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

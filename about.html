@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Butter & Bloom. Our story, premium ingredients, and passionate French pâtissiers.">
+    <title>Our Story | Butter & Bloom</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" id="logo-brand">
+                <span class="logo-text">Butter & Bloom</span>
+                <span class="logo-sub">Pâtisserie</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="navigation-bar">
+                <ul class="nav-list">
+                    <li><a href="about.html" class="nav-link active">Our Story</a></li>
+                    <li><a href="collection.html" class="nav-link">Collection</a></li>
+                    <li><a href="best-sellers.html" class="nav-link">Best Sellers</a></li>
+                    <li><a href="custom-orders.html" class="nav-link">Custom Cakes</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="login.html" class="nav-link">Sign In</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
+                <a href="custom-orders.html" class="btn btn-primary btn-sm" id="nav-order-btn">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="hero-section" id="hero" style="height: 40vh; min-height: 300px; background-image: url('assets/hero_bg.png');">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-container" style="padding-top: 60px;">
+                <div class="hero-content text-center">
+                    <span class="hero-tagline">Butter & Bloom Tradition</span>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Our Story</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="section-tag">Since 2018</span>
+                        <h2 class="section-title">Baked with Passion, Blooming with Creativity</h2>
+                        <div class="divider">
+                            <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <p class="about-text">
+                            At Butter & Bloom, we believe baking is an art. From flaky croissants and artisan breads to elegant celebration cakes, every creation is crafted using premium ingredients and timeless techniques.
+                        </p>
+                        <p class="about-text">
+                            Our pâtissiers transform simple ingredients into unforgettable experiences. We source premium French butter, local organic flour, and hand-selected seasonal fruits to bring you textures and flavors that linger in memory long after the last bite.
+                        </p>
+                        <div class="about-badges">
+                            <div class="badge-item">
+                                <span class="badge-point">✦</span>
+                                <span class="badge-label">Baked Daily</span>
+                            </div>
+                            <div class="badge-item">
+                                <span class="badge-point">✦</span>
+                                <span class="badge-label">Premium Butter</span>
+                            </div>
+                            <div class="badge-item">
+                                <span class="badge-point">✦</span>
+                                <span class="badge-label">Organic Flour</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="image-wrapper main-img">
+                            <img src="assets/artisan_breads.png" alt="Freshly baked artisan breads" class="about-img animate-zoom">
+                        </div>
+                        <div class="image-wrapper offset-img">
+                            <img src="assets/french_pastries.png" alt="Delicate French pastries" class="about-img animate-zoom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Pâtissiers Section -->
+        <section class="patissiers-section section-padding" id="patissiers">
+            <div class="patissiers-bg"></div>
+            <div class="container">
+                <div class="patissiers-grid">
+                    <div class="patissiers-image-box">
+                        <img src="assets/hero_bg.png" alt="Our Pâtissiers working in the kitchen" class="patissiers-img">
+                    </div>
+                    <div class="patissiers-info">
+                        <span class="section-tag light">The Artisans</span>
+                        <h2 class="section-title light-text">Crafted by Passionate Artisans</h2>
+                        <div class="divider">
+                            <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <p class="patissiers-desc">
+                            Our talented pâtissiers blend creativity, craftsmanship, and tradition to create desserts that delight both the eyes and the palate.
+                        </p>
+                        <p class="patissiers-desc">
+                            Led by Head Pâtissier Jean-Luc Moreau, who trained in the heart of Paris, our team works meticulously through the early hours of the morning to ensure every fold of butter and every pinch of flour is handled with extreme care. We don't just bake; we sculpt experiences.
+                        </p>
+                        <blockquote class="patissier-quote">
+                            "For generations, great bakers have understood a simple truth: perfection cannot be rushed. It must be kneaded, folded, rested, and patiently brought to life."
+                            <cite>— Jean-Luc Moreau, Chef de Pâtisserie</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-col brand-col">
+                        <a href="index.html" class="logo footer-logo">
+                            <span class="logo-text">Butter & Bloom</span>
+                            <span class="logo-sub">Pâtisserie</span>
+                        </a>
+                        <p class="footer-about">
+                            Crafting Sweet Moments, One Bake at a Time. Bringing authentic Parisian-style baking with a modern artistic touch to your table.
+                        </p>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Contact & Visit</h4>
+                        <ul class="footer-links">
+                            <li class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">14 Connaught Place, New Delhi 110 001</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span class="contact-text">+91 11 4567 8900</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span class="contact-text">hello@butterandbloom.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hours Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Opening Hours</h4>
+                        <ul class="footer-hours">
+                            <li><span class="day">Monday - Friday</span> <span class="time">7:00 AM - 7:00 PM</span></li>
+                            <li><span class="day">Saturday</span> <span class="time">8:00 AM - 8:00 PM</span></li>
+                            <li><span class="day">Sunday</span> <span class="time">8:00 AM - 4:00 PM</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Location Graphic Column -->
+                    <div class="footer-col map-col">
+                        <h4 class="footer-title">Our Location</h4>
+                        <div class="map-placeholder" id="stylized-map">
+                            <div class="map-graphic">
+                                <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="120" rx="8" fill="#F5EFEB"/>
+                                    <line x1="20" y1="0" x2="20" y2="120" stroke="#FFF" stroke-width="8"/>
+                                    <line x1="0" y1="60" x2="200" y2="60" stroke="#FFF" stroke-width="12"/>
+                                    <line x1="150" y1="0" x2="150" y2="120" stroke="#FFF" stroke-width="6"/>
+                                    <path d="M0 100 C50 95, 120 115, 200 105" stroke="#E1EAEF" stroke-width="10" fill="none"/>
+                                    <circle cx="90" cy="50" r="15" fill="#F3E1DC" opacity="0.6"/>
+                                    <circle cx="90" cy="50" r="5" fill="#C5A880"/>
+                                    <text x="90" y="32" fill="#2C2623" font-size="8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" text-anchor="middle">Butter & Bloom</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="copyright">&copy; 2026 Butter & Bloom. All rights reserved. Crafted for lovers of fine baking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Modal -->
+    <div class="modal-overlay" id="order-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-content" id="modal-body-content"></div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

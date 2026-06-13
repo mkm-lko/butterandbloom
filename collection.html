@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Butter & Bloom's artisan breads, custom celebration cakes, delicate French pastries, and sweet treats.">
+    <title>Pâtisserie Collection | Butter & Bloom</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" id="logo-brand">
+                <span class="logo-text">Butter & Bloom</span>
+                <span class="logo-sub">Pâtisserie</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="navigation-bar">
+                <ul class="nav-list">
+                    <li><a href="about.html" class="nav-link">Our Story</a></li>
+                    <li><a href="collection.html" class="nav-link active">Collection</a></li>
+                    <li><a href="best-sellers.html" class="nav-link">Best Sellers</a></li>
+                    <li><a href="custom-orders.html" class="nav-link">Custom Cakes</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="login.html" class="nav-link">Sign In</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
+                <a href="custom-orders.html" class="btn btn-primary btn-sm" id="nav-order-btn">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="hero-section" id="hero" style="height: 40vh; min-height: 300px; background-image: url('assets/french_pastries.png');">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-container" style="padding-top: 60px;">
+                <div class="hero-content text-center">
+                    <span class="hero-tagline">Signature Menu</span>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Pâtisserie Collection</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection Section -->
+        <section class="signature-section section-padding" id="signature">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Explore By Category</span>
+                    <h2 class="section-title">Handcrafted Varieties</h2>
+                    <div class="divider center">
+                        <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="signature-grid">
+                    <!-- Card 1 -->
+                    <div class="collection-card">
+                        <div class="card-image-box">
+                            <img src="assets/artisan_breads.png" alt="Artisan Breads collection" class="card-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Artisan Breads</h3>
+                            <p class="card-desc">Fresh sourdough, brioche, baguettes, and seasonal loaves.</p>
+                            <a class="card-link" href="breads.html">View Selection <span class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="collection-card">
+                        <div class="card-image-box">
+                            <img src="assets/custom_cakes.png" alt="Custom Cakes collection" class="card-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Custom Cakes</h3>
+                            <p class="card-desc">Beautifully designed cakes for birthdays, weddings, and special occasions.</p>
+                            <a class="card-link" href="custom_cakes.html">Order Custom <span class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="collection-card">
+                        <div class="card-image-box">
+                            <img src="assets/french_pastries.png" alt="French Pastries collection" class="card-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">French Pastries</h3>
+                            <p class="card-desc">Croissants, éclairs, tarts, mille-feuille, and handcrafted delights.</p>
+                            <a class="card-link" href="pastries.html">Explore Pastries <span class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="collection-card">
+                        <div class="card-image-box">
+                            <img src="assets/sweet_treats.png" alt="Sweet Treats collection" class="card-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Sweet Treats</h3>
+                            <p class="card-desc">Cookies, brownies, macarons, chocolates, and dessert boxes.</p>
+                            <a class="card-link" href="sweets.html">Discover Sweets <span class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-col brand-col">
+                        <a href="index.html" class="logo footer-logo">
+                            <span class="logo-text">Butter & Bloom</span>
+                            <span class="logo-sub">Pâtisserie</span>
+                        </a>
+                        <p class="footer-about">
+                            Crafting Sweet Moments, One Bake at a Time. Bringing authentic Parisian-style baking with a modern artistic touch to your table.
+                        </p>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Contact & Visit</h4>
+                        <ul class="footer-links">
+                            <li class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">14 Connaught Place, New Delhi 110 001</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span class="contact-text">+91 11 4567 8900</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span class="contact-text">hello@butterandbloom.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hours Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Opening Hours</h4>
+                        <ul class="footer-hours">
+                            <li><span class="day">Monday - Friday</span> <span class="time">7:00 AM - 7:00 PM</span></li>
+                            <li><span class="day">Saturday</span> <span class="time">8:00 AM - 8:00 PM</span></li>
+                            <li><span class="day">Sunday</span> <span class="time">8:00 AM - 4:00 PM</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Location Graphic Column -->
+                    <div class="footer-col map-col">
+                        <h4 class="footer-title">Our Location</h4>
+                        <div class="map-placeholder" id="stylized-map">
+                            <div class="map-graphic">
+                                <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="120" rx="8" fill="#F5EFEB"/>
+                                    <line x1="20" y1="0" x2="20" y2="120" stroke="#FFF" stroke-width="8"/>
+                                    <line x1="0" y1="60" x2="200" y2="60" stroke="#FFF" stroke-width="12"/>
+                                    <line x1="150" y1="0" x2="150" y2="120" stroke="#FFF" stroke-width="6"/>
+                                    <path d="M0 100 C50 95, 120 115, 200 105" stroke="#E1EAEF" stroke-width="10" fill="none"/>
+                                    <circle cx="90" cy="50" r="15" fill="#F3E1DC" opacity="0.6"/>
+                                    <circle cx="90" cy="50" r="5" fill="#C5A880"/>
+                                    <text x="90" y="32" fill="#2C2623" font-size="8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" text-anchor="middle">Butter & Bloom</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="copyright">&copy; 2026 Butter & Bloom. All rights reserved. Crafted for lovers of fine baking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Modal -->
+    <div class="modal-overlay" id="order-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-content" id="modal-body-content"></div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

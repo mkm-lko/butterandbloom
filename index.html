@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Indulge in handcrafted pastries, artisan breads, custom celebration cakes, and sweet treats baked fresh daily at Butter & Bloom. A luxury Parisian pâtisserie experience.">
+    <title>Butter & Bloom | Premium Bakery & Pâtisserie</title>
+    <!-- Google Fonts: Cormorant Garamond (headings) & Plus Jakarta Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header" id="site-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" id="logo-brand">
+                <span class="logo-text">Butter & Bloom</span>
+                <span class="logo-sub">Pâtisserie</span>
+            </a>
+
+            <!-- Mobile Navigation Trigger -->
+            <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="navigation-bar">
+                <ul class="nav-list">
+                    <li><a href="about.html" class="nav-link">Our Story</a></li>
+                    <li><a href="collection.html" class="nav-link">Collection</a></li>
+                    <li><a href="best-sellers.html" class="nav-link">Best Sellers</a></li>
+                    <li><a href="custom-orders.html" class="nav-link">Custom Cakes</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="login.html" class="nav-link">Sign In</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
+                <a href="custom-orders.html" class="btn btn-primary btn-sm" id="nav-order-btn">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-tagline animate-on-load">Artisanal & Fresh Daily</span>
+                    <h1 class="hero-title animate-on-load">Where Every Crumb Tells a Story</h1>
+                    <p class="hero-subtitle animate-on-load">
+                        Handcrafted pastries, artisan breads, custom cakes, and sweet creations baked fresh daily with passion and precision.
+                    </p>
+                    <div class="hero-actions animate-on-load">
+                        <a href="collection.html" class="btn btn-primary" id="hero-explore-btn">Explore Our Menu</a>
+                        <a href="custom-orders.html" class="btn btn-outline" id="hero-custom-btn">Order a Custom Cake</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="mouse-icon">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll to Discover</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section-padding reveal-on-scroll" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <span class="section-tag">Since 2018</span>
+                        <h2 class="section-title">Baked with Passion, Blooming with Creativity</h2>
+                        <div class="divider">
+                            <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <p class="about-text">
+                            At Butter & Bloom, we believe baking is an art. From flaky croissants and artisan breads to elegant celebration cakes, every creation is crafted using premium ingredients and timeless techniques.
+                        </p>
+                        <p class="about-text">
+                            Our pâtissiers transform simple ingredients into unforgettable experiences. We source premium French butter, local organic flour, and hand-selected seasonal fruits to bring you textures and flavors that linger in memory long after the last bite.
+                        </p>
+                        <div class="about-badges">
+                            <div class="badge-item">
+                                <span class="badge-point">✦</span>
+                                <span class="badge-label">Baked Daily</span>
+                            </div>
+                            <div class="badge-item">
+                                <span class="badge-point">✦</span>
+                                <span class="badge-label">Premium Butter</span>
+                            </div>
+                            <div class="badge-item">
+                                <span class="badge-point">✦</span>
+                                <span class="badge-label">Organic Flour</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="image-wrapper main-img">
+                            <img src="assets/artisan_breads.png" alt="Freshly baked artisan breads" class="about-img animate-zoom">
+                        </div>
+                        <div class="image-wrapper offset-img">
+                            <img src="assets/french_pastries.png" alt="Delicate French pastries" class="about-img animate-zoom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Collection Section -->
+        <section class="signature-section section-padding reveal-on-scroll" id="signature">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">The Pâtisserie Menu</span>
+                    <h2 class="section-title">Our Signature Collection</h2>
+                    <div class="divider center">
+                        <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p class="section-subtitle">
+                        Explore our curated selection of daily bakes, handcrafted with love and baked to perfection.
+                    </p>
+                </div>
+
+                <div class="signature-grid">
+                    <!-- Card 1 -->
+                    <div class="collection-card">
+                        <div class="card-image-box">
+                            <img src="assets/artisan_breads.png" alt="Artisan Breads collection" class="card-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Artisan Breads</h3>
+                            <p class="card-desc">Fresh sourdough, brioche, baguettes, and seasonal loaves.</p>
+                            <a class="card-link" href="breads.html">View Selection <span class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="collection-card">
+                        <div class="card-image-box">
+                            <img src="assets/custom_cakes.png" alt="Custom Cakes collection" class="card-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Custom Cakes</h3>
+                            <p class="card-desc">Beautifully designed cakes for birthdays, weddings, and special occasions.</p>
+                            <a class="card-link" href="custom_cakes.html">Order Custom <span class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="collection-card">
+                        <div class="card-image-box">
+                            <img src="assets/french_pastries.png" alt="French Pastries collection" class="card-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">French Pastries</h3>
+                            <p class="card-desc">Croissants, éclairs, tarts, mille-feuille, and handcrafted delights.</p>
+                            <a class="card-link" href="pastries.html">Explore Pastries <span class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="collection-card">
+                        <div class="card-image-box">
+                            <img src="assets/sweet_treats.png" alt="Sweet Treats collection" class="card-img">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Sweet Treats</h3>
+                            <p class="card-desc">Cookies, brownies, macarons, chocolates, and dessert boxes.</p>
+                            <a class="card-link" href="sweets.html">Discover Sweets <span class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section class="best-sellers-section section-padding reveal-on-scroll" id="best-sellers">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Customer Favorites</span>
+                    <h2 class="section-title">The Best Sellers</h2>
+                    <div class="divider center">
+                        <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p class="section-subtitle">
+                        Taste the creations that defined our bakery. Baked in limited quantities daily.
+                    </p>
+                </div>
+
+                <div class="best-sellers-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-badge">Top Seller</div>
+                        <div class="product-image">
+                            <img src="assets/croissant.png" alt="Signature Butter Croissant" class="prod-img">
+                        </div>
+                        <div class="product-details">
+                            <div class="product-header">
+                                <h3 class="product-title">Signature Butter Croissant</h3>
+                                <span class="product-price">₹380</span>
+                            </div>
+                            <p class="product-desc">Flaky, multi-layered golden French pastry, hand-rolled with premium AOP Charentes-Poitou butter.</p>
+                            <button class="btn btn-gold btn-sm btn-full" id="buy-croissant">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-badge">Signature</div>
+                        <div class="product-image">
+                            <img src="assets/custom_cakes.png" alt="Raspberry Rose Cake" class="prod-img">
+                        </div>
+                        <div class="product-details">
+                            <div class="product-header">
+                                <h3 class="product-title">Raspberry Rose Cake</h3>
+                                <span class="product-price">₹4,400</span>
+                            </div>
+                            <p class="product-desc">Elegant layers of light rosewater sponge, fresh raspberry gelée, and velvety white chocolate rosebud buttercream.</p>
+                            <button class="btn btn-gold btn-sm btn-full" id="buy-rose-cake">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-badge">Delicate</div>
+                        <div class="product-image">
+                            <img src="assets/sweet_treats.png" alt="Vanilla Bean Macarons" class="prod-img">
+                        </div>
+                        <div class="product-details">
+                            <div class="product-header">
+                                <h3 class="product-title">Vanilla Bean Macarons</h3>
+                                <span class="product-price">₹1,500</span>
+                            </div>
+                            <p class="product-desc">A box of six crisp, delicate almond meringue shells filled with rich organic Madagascar vanilla bean white chocolate ganache.</p>
+                            <button class="btn btn-gold btn-sm btn-full" id="buy-macarons">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-badge">Indulgent</div>
+                        <div class="product-image">
+                            <img src="assets/french_pastries.png" alt="Belgian Chocolate Éclair" class="prod-img">
+                        </div>
+                        <div class="product-details">
+                            <div class="product-header">
+                                <h3 class="product-title">Belgian Chocolate Éclair</h3>
+                                <span class="product-price">₹550</span>
+                            </div>
+                            <p class="product-desc">Choux pastry shells piped with single-origin Callebaut chocolate cream and glazed with dark chocolate mirror ganache.</p>
+                            <button class="btn btn-gold btn-sm btn-full" id="buy-eclair">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Pâtissiers Section -->
+        <section class="patissiers-section section-padding reveal-on-scroll" id="patissiers">
+            <div class="patissiers-bg"></div>
+            <div class="container">
+                <div class="patissiers-grid">
+                    <div class="patissiers-image-box">
+                        <img src="assets/hero_bg.png" alt="Our Pâtissiers working in the kitchen" class="patissiers-img">
+                        <div class="patissiers-experience-badge">
+                            <span class="years">15+</span>
+                            <span class="exp-text">Years of French Tradition</span>
+                        </div>
+                    </div>
+                    <div class="patissiers-info">
+                        <span class="section-tag light">The Artisans</span>
+                        <h2 class="section-title light-text">Crafted by Passionate Artisans</h2>
+                        <div class="divider">
+                            <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <p class="patissiers-desc">
+                            Our talented pâtissiers blend creativity, craftsmanship, and tradition to create desserts that delight both the eyes and the palate.
+                        </p>
+                        <p class="patissiers-desc">
+                            Led by Head Pâtissier Jean-Luc Moreau, who trained in the heart of Paris, our team works meticulously through the early hours of the morning to ensure every fold of butter and every pinch of flour is handled with extreme care. We don't just bake; we sculpt experiences.
+                        </p>
+                        <blockquote class="patissier-quote">
+                            "For generations, great bakers have understood a simple truth: perfection cannot be rushed. It must be kneaded, folded, rested, and patiently brought to life."
+                            <cite>— Jean-Luc Moreau, Chef de Pâtisserie</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Orders (Configurator) Section -->
+        <section class="custom-orders-section section-padding reveal-on-scroll" id="custom-orders">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Custom Celebration Cakes</span>
+                    <h2 class="section-title">Your Dream Cake, Perfectly Crafted</h2>
+                    <div class="divider center">
+                        <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p class="section-subtitle">
+                        Customize your custom cake below. Select your flavor, size, style, and let our pastry chefs bring your vision to life.
+                    </p>
+                </div>
+
+                <div class="configurator-grid">
+                    <!-- Left: Form Controls -->
+                    <div class="config-form-container">
+                        <form id="cake-configurator-form" class="config-form">
+                            <!-- Input 1: Flavor -->
+                            <div class="form-group">
+                                <label for="cake-flavor" class="form-label">Select Flavor Profile</label>
+                                <select id="cake-flavor" class="form-select">
+                                    <option value="raspberry-rose" data-price="0">Raspberry Rose & Vanilla Bean</option>
+                                    <option value="belgian-chocolate" data-price="420">Belgian Chocolate Truffle (+₹420)</option>
+                                    <option value="salted-caramel" data-price="250">Salted Caramel Praline (+₹250)</option>
+                                    <option value="lemon-elderflower" data-price="340">Lemon Elderflower & Honey (+₹340)</option>
+                                    <option value="pistachio-apricot" data-price="680">Pistachio Cardamom & Apricot (+₹680)</option>
+                                </select>
+                            </div>
+
+                            <!-- Input 2: Size -->
+                            <div class="form-group">
+                                <label class="form-label">Select Cake Size / Tiers</label>
+                                <div class="radio-grid">
+                                    <label class="radio-card">
+                                        <input type="radio" name="cake-size" value="6inch" data-price="3800" checked>
+                                        <span class="radio-content">
+                                            <span class="radio-title">6" Single Tier</span>
+                                            <span class="radio-subtitle">Serves 8-10 guests</span>
+                                            <span class="radio-price">₹3,800</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="cake-size" value="8inch" data-price="5500">
+                                        <span class="radio-content">
+                                            <span class="radio-title">8" Single Tier</span>
+                                            <span class="radio-subtitle">Serves 15-20 guests</span>
+                                            <span class="radio-price">₹5,500</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="cake-size" value="twotier" data-price="10000">
+                                        <span class="radio-content">
+                                            <span class="radio-title">Two-Tiered (6" + 8")</span>
+                                            <span class="radio-subtitle">Serves 30-35 guests</span>
+                                            <span class="radio-price">₹10,000</span>
+                                        </span>
+                                    </label>
+                                    <label class="radio-card">
+                                        <input type="radio" name="cake-size" value="threetier" data-price="18500">
+                                        <span class="radio-content">
+                                            <span class="radio-title">Three-Tiered (6"+8"+10")</span>
+                                            <span class="radio-subtitle">Serves 60-70 guests</span>
+                                            <span class="radio-price">₹18,500</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Input 3: Theme -->
+                            <div class="form-group">
+                                <label for="cake-theme" class="form-label">Design Theme & Aesthetic</label>
+                                <select id="cake-theme" class="form-select">
+                                    <option value="minimalist" data-price="0">Parisian Minimalist (Rough Buttercream)</option>
+                                    <option value="floral" data-price="1250">Floral Bloom (Fresh Edible Flowers & Herbs) (+₹1,250)</option>
+                                    <option value="gold-luxury" data-price="2100">Gold Splendor (24k Edible Gold Leaf Accents) (+₹2,100)</option>
+                                    <option value="whimsical" data-price="850">Whimsical Macaron & Berry Topped (+₹850)</option>
+                                </select>
+                            </div>
+
+                            <!-- Input 4: Decorations (Checkboxes) -->
+                            <div class="form-group">
+                                <label class="form-label">Extra Decor & Handcrafted Details</label>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="cake-decor" value="piping" data-price="420">
+                                        <span class="checkbox-content">
+                                            <span class="decor-name">Piped Buttercream Borders</span>
+                                            <span class="decor-price">+₹420</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="cake-decor" value="pearls" data-price="500">
+                                        <span class="checkbox-content">
+                                            <span class="decor-name">Edible Sugar Pearls</span>
+                                            <span class="decor-price">+₹500</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="cake-decor" value="sparklers" data-price="340">
+                                        <span class="checkbox-content">
+                                            <span class="decor-name">Elegant Rosegold Sparklers</span>
+                                            <span class="decor-price">+₹340</span>
+                                        </span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="cake-decor" value="macaron-topper" data-price="1000">
+                                        <span class="checkbox-content">
+                                            <span class="decor-name">Handmade Macaron Halo</span>
+                                            <span class="decor-price">+₹1,000</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Input 5: Message -->
+                            <div class="form-group">
+                                <label for="cake-message" class="form-label">Personalized Cake Plaque Message</label>
+                                <input type="text" id="cake-message" class="form-input" placeholder="e.g., Happy 30th Birthday Sophia!" maxlength="40">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Right: Sticky Live Preview & Summary -->
+                    <div class="config-preview-container">
+                        <div class="preview-card" id="interactive-preview-card">
+                            <div class="preview-visual">
+                                <div class="cake-illustration">
+                                    <div class="cake-layer-graphic tier-3" id="graphic-tier3"></div>
+                                    <div class="cake-layer-graphic tier-2" id="graphic-tier2"></div>
+                                    <div class="cake-layer-graphic tier-1" id="graphic-tier1"></div>
+                                    <div class="cake-stand-graphic"></div>
+                                </div>
+                                <div class="cake-theme-overlay" id="theme-visual-effects"></div>
+                                <div class="cake-message-plaque" id="plaque-preview">Butter & Bloom</div>
+                            </div>
+                            <div class="preview-details">
+                                <h3 class="preview-heading">Custom Cake Summary</h3>
+                                <ul class="summary-list">
+                                    <li><strong>Flavor:</strong> <span id="summary-flavor">Raspberry Rose & Vanilla Bean</span></li>
+                                    <li><strong>Size:</strong> <span id="summary-size">6" Single Tier</span></li>
+                                    <li><strong>Style:</strong> <span id="summary-theme">Parisian Minimalist</span></li>
+                                    <li><strong>Extras:</strong> <span id="summary-decor">None selected</span></li>
+                                    <li><strong>Message:</strong> <span id="summary-message" class="italic">None</span></li>
+                                </ul>
+                                <div class="summary-total">
+                                    <span class="total-label">Estimated Price:</span>
+                                    <span class="total-price" id="configurator-price">₹3,800</span>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-full" id="configurator-btn">Design Your Cake</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section section-padding reveal-on-scroll" id="gallery">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">A Visual Feast</span>
+                    <h2 class="section-title">The Pâtisserie Gallery</h2>
+                    <div class="divider center">
+                        <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p class="section-subtitle">
+                        Glance inside our kitchen and front-of-house. Beautiful ingredients, passion, and elegance in every frame.
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item size-wide">
+                        <img src="assets/hero_bg.png" alt="Bakery Interiors and Counters" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">✦</span>
+                            <span class="gallery-title">Our Warm Interior</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <img src="assets/croissant.png" alt="Flaky Butter Croissants" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">✦</span>
+                            <span class="gallery-title">Fresh Pastries</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item">
+                        <img src="assets/artisan_breads.png" alt="Artisan Sourdough Loaves" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">✦</span>
+                            <span class="gallery-title">Artisan Breads</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item">
+                        <img src="assets/french_pastries.png" alt="Mouthwatering Chocolate Eclairs and tarts" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">✦</span>
+                            <span class="gallery-title">Eclairs & Tarts</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item size-tall">
+                        <img src="assets/custom_cakes.png" alt="Luxurious Celebration Cake" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">✦</span>
+                            <span class="gallery-title">Celebration Cakes</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item">
+                        <img src="assets/sweet_treats.png" alt="Delicate colorful macarons in a box" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <span class="gallery-zoom-icon">✦</span>
+                            <span class="gallery-title">Macarons & Treats</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section section-padding reveal-on-scroll" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Kind Words</span>
+                    <h2 class="section-title">Our Guests' Experience</h2>
+                    <div class="divider center">
+                        <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 5C15 5 15 1 30 1C45 1 45 9 60 9" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-slider" id="testimonial-slider-track">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="testimonial-quote-text">
+                                "Every pastry tastes like perfection. The croissants are flakier than anything I've tasted, and the whole place feels like a warm, elegant escape from the city."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <span class="author-name">Priya Sharma</span>
+                                <span class="author-title">Frequent Guest, Mumbai</span>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="testimonial-quote-text">
+                                "The most beautiful cake we've ever ordered. The Raspberry Rose Cake was the centerpiece of our anniversary dinner and tasted even better than it looked!"
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <span class="author-name">Arjun Mehta</span>
+                                <span class="author-title">Custom Order Client, Delhi</span>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <blockquote class="testimonial-quote-text">
+                                "A bakery experience that feels truly special. From the beautiful interiors to the warmth of the staff, it has become our favourite Sunday morning ritual."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <span class="author-name">Ananya Kapoor</span>
+                                <span class="author-title">Regular Visitor, Bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-arrow prev" id="testimonial-prev" aria-label="Previous Review">&#10229;</button>
+                        <div class="slider-dots" id="testimonial-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                        </div>
+                        <button class="slider-arrow next" id="testimonial-next" aria-label="Next Review">&#10230;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section section-padding" id="final-cta">
+            <div class="cta-bg-image"></div>
+            <div class="cta-overlay"></div>
+            <div class="container relative">
+                <div class="cta-content text-center">
+                    <span class="section-tag light">Take a Piece of Heaven Home</span>
+                    <h2 class="cta-title">Bring Home a Little Sweetness</h2>
+                    <p class="cta-subtitle">
+                        Visit Butter & Bloom today and discover handcrafted pastries, artisan breads, and desserts made to brighten every moment.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="custom-orders.html" class="btn btn-primary" id="order-online-btn">Order Online</a>
+                        <a href="#footer" class="btn btn-outline-white" id="visit-bakery-btn">Visit Our Bakery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Brand Column -->
+                    <div class="footer-col brand-col">
+                        <a href="index.html" class="logo footer-logo">
+                            <span class="logo-text">Butter & Bloom</span>
+                            <span class="logo-sub">Pâtisserie</span>
+                        </a>
+                        <p class="footer-about">
+                            Crafting Sweet Moments, One Bake at a Time. Bringing authentic Parisian-style baking with a modern artistic touch to your table.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Pinterest">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.907 2.17-2.907 1.023 0 1.517.769 1.517 1.689 0 1.029-.656 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.16-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.607 0 11.985-5.36 11.985-11.987C24.02 5.36 18.624 0 12.017 0z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Contact & Visit</h4>
+                        <ul class="footer-links">
+                            <li class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span class="contact-text">14 Connaught Place, New Delhi 110 001</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span class="contact-text">+91 11 4567 8900</span>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span class="contact-text">hello@butterandbloom.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Hours Column -->
+                    <div class="footer-col">
+                        <h4 class="footer-title">Opening Hours</h4>
+                        <ul class="footer-hours">
+                            <li><span class="day">Monday - Friday</span> <span class="time">7:00 AM - 7:00 PM</span></li>
+                            <li><span class="day">Saturday</span> <span class="time">8:00 AM - 8:00 PM</span></li>
+                            <li><span class="day">Sunday</span> <span class="time">8:00 AM - 4:00 PM</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Map/Location Column -->
+                    <div class="footer-col map-col">
+                        <h4 class="footer-title">Our Location</h4>
+                        <div class="map-placeholder" id="stylized-map">
+                            <div class="map-graphic">
+                                <svg width="100%" height="100%" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Simplified architectural map styling -->
+                                    <rect width="200" height="120" rx="8" fill="#F5EFEB"/>
+                                    <!-- Roads -->
+                                    <line x1="20" y1="0" x2="20" y2="120" stroke="#FFF" stroke-width="8"/>
+                                    <line x1="0" y1="60" x2="200" y2="60" stroke="#FFF" stroke-width="12"/>
+                                    <line x1="150" y1="0" x2="150" y2="120" stroke="#FFF" stroke-width="6"/>
+                                    <!-- River representation -->
+                                    <path d="M0 100 C50 95, 120 115, 200 105" stroke="#E1EAEF" stroke-width="10" fill="none"/>
+                                    <!-- Landmark Pin -->
+                                    <circle cx="90" cy="50" r="15" fill="#F3E1DC" opacity="0.6"/>
+                                    <circle cx="90" cy="50" r="5" fill="#C5A880"/>
+                                    <!-- Text label -->
+                                    <text x="90" y="32" fill="#2C2623" font-size="8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" text-anchor="middle">Butter & Bloom</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="copyright">&copy; 2026 Butter & Bloom. All rights reserved. Crafted for lovers of fine baking.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Reservation/Order Confirmation Modal (Interactive) -->
+    <div class="modal-overlay" id="order-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-content" id="modal-body-content">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
